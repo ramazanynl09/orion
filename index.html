@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orion - Space Mission Design & Simulation</title>
+<meta name="description" content="An interactive space mission simulation game focusing on orbital mechanics, payload capacities, budget, and power management.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="pointer-glow" aria-hidden="true"></div>
+<header><p class="eyebrow">Mission design · Space simulation</p><h1>ASTROYARD</h1>
+<p class="sub intro">You are the Chief Engineer. Pick a mission, design the spacecraft within budget and physics, then press Launch.</p><p class="sub speed"><label>Animation speed <select id="spd"><option value="1">Normal</option><option value="2">Fast</option><option value="6">Skip ahead</option></select></label></p></header>
+<main><div id="left"></div>
+<div class="panel" id="side"><section id="pan"><h2 id="ph">Mission Status</h2><div id="stats"></div><div id="warns"></div>
+<button class="go" id="go">🚀 LAUNCH!</button></section></div>
+<div id="dock" style="grid-column:1/-1"></div><div id="out" style="grid-column:1/-1"></div><div id="hs" style="grid-column:1/-1"></div></main>
+<footer><b>PREPARED BY TEAM ORION</b><span>NASA Space Apps Challenge</span></footer>
+<div id="mbar"></div>
+<script src="script.js" defer></script></body></html>
